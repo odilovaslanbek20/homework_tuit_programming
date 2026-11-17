@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -11,7 +12,8 @@ int main() {
     DoubleX(na, a, xa);
 
     cout << "a massivi (na = " << na << "): ";
-    for (int i = 0; i < na; i++) cout << a[i] << " ";
+    for (int i = 0; i < na; i++)
+        cout << a[i] << " ";
     cout << endl;
 
     int nb = 4;
@@ -21,7 +23,8 @@ int main() {
     DoubleX(nb, b, xb);
 
     cout << "b massivi (nb = " << nb << "): ";
-    for (int i = 0; i < nb; i++) cout << b[i] << " ";
+    for (int i = 0; i < nb; i++)
+        cout << b[i] << " ";
     cout << endl;
 
     int nc = 3;
@@ -31,12 +34,16 @@ int main() {
     DoubleX(nc, c, xc);
 
     cout << "c massivi (nc = " << nc << "): ";
-    for (int i = 0; i < nc; i++) cout << c[i] << " ";
+    for (int i = 0; i < nc; i++)
+        cout << c[i] << " ";
     cout << endl;
 
     delete[] a;
     delete[] b;
     delete[] c;
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
 
     return 0;
 }

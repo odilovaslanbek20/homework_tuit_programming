@@ -22,6 +22,9 @@ int main() {
     cout << "Perimetri: " << P << endl;
     cout << "Yuzasi: " << S << endl;
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }
 

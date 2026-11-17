@@ -16,5 +16,9 @@ int main() {
     }
 
     cout << "Katta harflar soni: " << soni << endl;
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

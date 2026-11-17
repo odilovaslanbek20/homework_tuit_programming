@@ -18,6 +18,9 @@ int main() {
     }
     
     cout << "a = " << a << ", b = " << b << ", c = " << c << endl;
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
     
     return 0;
 }

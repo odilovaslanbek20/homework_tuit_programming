@@ -31,5 +31,9 @@ int main() {
         cerr << "Xato: " << e.what() << endl;
         return 1;
     }
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

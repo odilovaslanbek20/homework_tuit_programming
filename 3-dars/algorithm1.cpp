@@ -24,5 +24,8 @@ int main() {
         Y = sqrt(2 * k1 + 7 * k2);
     cout << "Y = " << Y << endl;
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

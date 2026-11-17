@@ -23,5 +23,8 @@ int main() {
     cout << "while:     " << sWhile << endl;
     cout << "do...while:" << sDoWhile << endl;
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

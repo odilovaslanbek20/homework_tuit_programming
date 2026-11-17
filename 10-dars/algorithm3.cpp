@@ -24,5 +24,8 @@ int main() {
     for (int i = 0; i < k; i++) cout << A[i];
     cout << endl;
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

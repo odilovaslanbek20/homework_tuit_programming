@@ -31,5 +31,9 @@ int main() {
     }
 
     cout << "Natija: " << natija << endl;
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

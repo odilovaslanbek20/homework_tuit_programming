@@ -58,5 +58,8 @@ int main() {
     else
         cout << "(2,3) nuqta doirada TASHQARIDA" << endl;
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

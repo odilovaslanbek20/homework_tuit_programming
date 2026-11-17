@@ -17,5 +17,9 @@ int main() {
 
     long long natija = a / ekub(a, b) * b;
     cout << "EKUK = " << natija << endl;
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

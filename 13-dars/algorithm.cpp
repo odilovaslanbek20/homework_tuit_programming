@@ -52,5 +52,8 @@ int main() {
     if (!topildi)
         cout << "\n'" << nom << "' nomli avtomobil topilmadi!\n";
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();    
+
     return 0;
 }

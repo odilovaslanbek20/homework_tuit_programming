@@ -36,5 +36,8 @@ int main() {
 
     buyurtma(osh, choy);
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

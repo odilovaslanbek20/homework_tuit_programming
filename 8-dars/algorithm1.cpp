@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -6,6 +7,7 @@ void chiqar(int* a, int n, const char* nom);
 
 int main() {
     int nx = 4, ny = 5;
+
     int* x = new int[nx] {1, 3, 5, 7};
     int* y = new int[ny] {2, 4, 6, 8, 9};
 
@@ -19,18 +21,22 @@ int main() {
     delete[] y;
     delete[] z;
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }
 
 int* birlashtir(int* x, int nx, int* y, int ny) {
-    int* z = new int[nx + ny]; 
+    int* z = new int[nx + ny];
 
     int i = 0, j = 0, k = 0;
 
     while (i < nx && j < ny) {
         if (x[i] <= y[j]) {
             z[k++] = x[i++];
-        } else {
+        }
+        else {
             z[k++] = y[j++];
         }
     }
@@ -48,9 +54,13 @@ int* birlashtir(int* x, int nx, int* y, int ny) {
 
 void chiqar(int* a, int n, const char* nom) {
     cout << nom << " = [";
+
     for (int i = 0; i < n; i++) {
         cout << a[i];
-        if (i < n - 1) cout << ", ";
+
+        if (i < n - 1)
+            cout << ", ";
     }
+
     cout << "]\n";
 }

@@ -59,6 +59,9 @@ int main() {
         cout << "(2,3) ichida" << endl;
     else
         cout << "(2,3) tashqarida" << endl;
+    
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();    
 
     return 0;
 }

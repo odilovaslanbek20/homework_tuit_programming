@@ -34,5 +34,9 @@ int main() {
     if (joriy > maks)
         maks = joriy;
     cout << "Eng katta nollar ketma-ketligi uzunligi: " << maks << endl;
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }

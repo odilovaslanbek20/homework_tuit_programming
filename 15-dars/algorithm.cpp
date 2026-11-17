@@ -2,27 +2,32 @@
 #include <cmath>
 using namespace std;
 
-class Tortburchak {
+class Tortburchak
+{
 protected:
-    double a, b;   
+    double a, b;
 
 public:
     Tortburchak(double a, double b) : a(a), b(b) {}
 
-    virtual double perimetr() {
+    virtual double perimetr()
+    {
         return 2 * (a + b);
     }
 
-    virtual double yuza() {
+    virtual double yuza()
+    {
         return a * b;
     }
 
-    virtual void ikkiMartaOshir() {
+    virtual void ikkiMartaOshir()
+    {
         a *= 2;
         b *= 2;
     }
 
-    virtual void nashrga() {
+    virtual void nashrga()
+    {
         cout << "=== To'g'ri to'rtburchak ===" << endl;
         cout << "Tomonlar : a = " << a << ", b = " << b << endl;
         cout << "Perimetr : " << perimetr() << endl;
@@ -32,24 +37,28 @@ public:
     virtual ~Tortburchak() {}
 };
 
-class Parallelogramm : public Tortburchak {
+class Parallelogramm : public Tortburchak
+{
 private:
-    double burchak;   
+    double burchak;
 
 public:
     Parallelogramm(double a, double b, double burchak)
         : Tortburchak(a, b), burchak(burchak) {}
 
-    double perimetr() override {
+    double perimetr() override
+    {
         return 2 * (a + b);
     }
 
-    double yuza() override {
-        double rad = burchak * M_PI / 180.0;   
+    double yuza() override
+    {
+        double rad = burchak * M_PI / 180.0;
         return a * b * sin(rad);
     }
 
-    void nashrga() override {
+    void nashrga() override
+    {
         cout << "=== Parallelogramm ===" << endl;
         cout << "Tomonlar : a = " << a << ", b = " << b << endl;
         cout << "Burchak  : " << burchak << "°" << endl;
@@ -58,7 +67,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Tortburchak t1(4, 6);
     Tortburchak t2(5, 10);
 
@@ -74,7 +84,7 @@ int main() {
     cout << "\n########## IKKI MARTA OSHIRILDI ##########\n";
     t1.ikkiMartaOshir();
     t2.ikkiMartaOshir();
-    p1.ikkiMartaOshir();   
+    p1.ikkiMartaOshir();
 
     t1.nashrga();
     cout << endl;
@@ -83,8 +93,11 @@ int main() {
     p1.nashrga();
 
     cout << "\n########## POLIMORFIZM ##########\n";
-    Tortburchak* ptr = &p1;
-    ptr->nashrga();   
+    Tortburchak *ptr = &p1;
+    ptr->nashrga();
+
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
 
     return 0;
 }
