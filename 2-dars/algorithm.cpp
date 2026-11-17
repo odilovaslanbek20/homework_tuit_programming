@@ -25,6 +25,9 @@ int main() {
     cout << "\nChiqish uchun Enter tugmasini bosing...";
     cin.get();
 
+    cout << "\nChiqish uchun Enter tugmasini bosing...";
+    cin.get();
+
     return 0;
 }
 
